@@ -17,7 +17,7 @@ const UsuarioSchema = Schema({
     },
     online: {
         type: Boolean,
-        default: true
+        default: false
     }
 
 });

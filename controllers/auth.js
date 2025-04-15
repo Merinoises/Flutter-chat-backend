@@ -74,7 +74,7 @@ const login = async (req, res = response) => {
         //Generar el Jason Web Token 
         const token = await generarJWT( usuarioDB.id );
 
-        res.json({
+        res.status(200).json({
             ok: true,
             usuario: usuarioDB,
             token
